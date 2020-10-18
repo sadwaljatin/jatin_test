@@ -1,1 +1,4 @@
-hey this is all for the testing purpose
+FROM node:latest
+RUN npm install -g serve
+COPY ./display ./display
+CMD serve ./display
